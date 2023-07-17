@@ -1,8 +1,8 @@
 {
-  "name": "-tenzies-react",
+  "name": "tenzies-react",
   "homepage": "https://sashauly.github.io/tenzies-react/",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
