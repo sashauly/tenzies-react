@@ -1,8 +1,16 @@
-* {
+html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  display: grid;
+
   min-width: 320px;
   margin: 0;
   padding: 30px 20px;
@@ -11,6 +19,8 @@ body {
 
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+
+  place-items: center;
 }
 
 main {
@@ -19,17 +29,17 @@ main {
   flex-direction: column;
   justify-content: space-around;
 
-  height: 320px;
   padding: 34px;
 
   border-radius: 10px;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
+  box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
 }
 
 .dice-container {
   display: grid;
 
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   gap: 18px;
   grid-template: auto auto / repeat(5, 1fr);
@@ -55,8 +65,8 @@ main {
   align-items: center;
   justify-content: center;
 
-  width: 36px;
-  height: 36px;
+  width: 80px;
+  height: 80px;
 
   cursor: pointer;
 
@@ -69,12 +79,12 @@ main {
 
   color: #2b283a;
 
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .roll-dice {
-  padding: 5px 20px;
+  padding: 5px 40px;
 
   cursor: pointer;
   text-align: center;
@@ -85,7 +95,7 @@ main {
   background-color: transparent;
 
   font-family: 'Karla', sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
 }
 
